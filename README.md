@@ -29,7 +29,7 @@ pip install -r requirements.txt
 # drive_main.spec
 
 # PyInstallerの設定
-hiddenimports = ['必要なモジュール名1', '必要なモジュール名2']
+hiddenimports = ['src.database.db']
 
 # 他のオプションも含む spec ファイルの内容
 ```
@@ -41,7 +41,7 @@ hiddenimports = ['必要なモジュール名1', '必要なモジュール名2']
 # ui.spec
 
 # PyInstallerの設定
-hiddenimports = ['必要なモジュール名1', '必要なモジュール名2']
+hiddenimports = ['src.database.db', 'tkcalendar','babel.numbers', 'babel.dates']
 
 # 他のオプションも含む spec ファイルの内容
 ```
@@ -82,3 +82,4 @@ pyinstaller ui.spec
 - EXEファイルの作成はWindowsでのみサポートされています。 他のOS（Linux, macOSなど）では、この方法でEXEファイルを作成することはできません。
 - `hiddenimports` の部分に必要なモジュールをすべて追加しないと、実行ファイル作成時にエラーが発生する可能性があります。
 - EXE 化に必要な他の設定項目があれば、`spec` ファイルをさらにカスタマイズしてください。
+- EXEファイルの操作方法については、`explanation.md`を参照してください。
