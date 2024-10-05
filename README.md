@@ -72,11 +72,6 @@ pyinstaller ui.spec
 ```bash
 ./dist/drive_main/drive_main.exe
 ./dist/ui/ui.exe
-
-```
-./dist/drive_main/drive_main.exe
-./dist/ui/ui.exe
-
 ```
 ### 注意点
 - EXEファイルの作成はWindowsでのみサポートされています。 他のOS（Linux, macOSなど）では、この方法でEXEファイルを作成することはできません。
